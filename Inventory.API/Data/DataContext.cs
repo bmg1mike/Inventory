@@ -7,6 +7,7 @@ namespace Inventory.API.Data
     {
         public DbSet<Book> Books { get; set; }
         public DbSet<Category> Categories { get; set; }
+        public DbSet<User> Users { get; set; }
         public DataContext(DbContextOptions<DataContext> options):base(options)
         { 
             
