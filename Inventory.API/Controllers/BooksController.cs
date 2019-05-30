@@ -60,6 +60,8 @@ namespace Inventory.API.Controllers
             bookId.Name = book.Name;
             bookId.Quantity = book.Quantity;
             bookId.CategoryId = book.CategoryId;
+            bookId.CostPrice = book.CostPrice;
+            bookId.SellingPrice = book.SellingPrice;
             bookId.UpdatedDate = DateTime.Now;
 
             _Context.SaveChanges();

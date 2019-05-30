@@ -9,6 +9,8 @@ namespace Inventory.API.Models
         [Required]
         public string Name { get; set; }
         public int Quantity { get; set; }
+        public int CostPrice { get; set; }
+        public int SellingPrice { get; set; }
         public Category Category { get; set; }
         public int CategoryId { get; set; }
         public DateTime CreatedDate { get; set; } = DateTime.Now;
